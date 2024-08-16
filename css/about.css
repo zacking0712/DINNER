@@ -1,0 +1,543 @@
+header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+/* Modal */
+.modal-backdrop {
+  --bs-backdrop-zindex: 0;
+}
+
+.header_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.header_logo a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.header_items {
+  position: relative;
+  display: flex;
+}
+
+.header_items form,
+.header_items .mode {
+  margin-right: 20px;
+}
+
+.header_items input {
+  padding: 10px 20px;
+  /* border: 1px solid transparent; */
+  border-radius: 5px;
+  outline: none;
+}
+
+.header_items span {
+  position: absolute;
+  transform: translate(-30px, 10px);
+  cursor: pointer;
+}
+
+.header_items span a {
+  font-size: 15px;
+}
+
+.header_items .mode {
+  font-size: 24px;
+}
+
+.header_items .btn_menu {
+  font-size: 32px;
+}
+
+.header_items .btn_menu i {
+  color: #ffffff;
+}
+
+.header_items .btn_menu button {
+  border: none;
+  background-color: transparent;
+}
+
+.header_items .overlay_menu {
+  background: rgb(6 3 0 / 77%);
+}
+
+.header_items .overlay_menu .modal-content {
+  background-color: transparent;
+  border: none;
+  text-align: center;
+  width: 100%;
+}
+
+.header_content .overlay_menu .btn-close {
+  background-color: #f96306;
+  width: 24px;
+  height: 24px;
+  opacity: 1;
+  color: #ffffff !important;
+}
+
+.header_items .modal-content .modal-header {
+  border-bottom: none;
+}
+
+.header_items .modal-content nav {
+  padding: 60px;
+}
+
+.header_items .modal-content nav ul li {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.header_items .modal-content nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* Banner */
+.banner {
+  position: relative;
+  background-image: url("../image/banner2.jpg");
+  background-size: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  height: 40vh;
+  /* z-index: ; */
+  display: flex;
+  align-items: center;
+}
+
+.banner .OverLay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    to right,
+    rgb(236 98 6 / 98%),
+    rgb(5 3 0 / 83%)
+  );
+  z-index: 1;
+}
+
+.banner .banner_content {
+  position: relative;
+  z-index: 2;
+}
+
+.banner .banner_content ul {
+  justify-content: center;
+  align-items: center;
+}
+
+.banner .banner_content ul span i {
+  color: #fff;
+  font-size: 10px;
+}
+
+.banner .banner_content ul li:first-child a {
+  color: #ff6600;
+}
+
+.banner .banner_content ul li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+.banner .banner_content ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+/* Story */
+.story {
+  padding: 50px 0;
+}
+
+.story_title {
+  padding: 50px 0;
+}
+
+.story_top img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.story_top h3 {
+  margin-bottom: 30px;
+}
+
+.story_top p {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #161c2d;
+}
+
+.story_top button {
+  background-color: #ff6600;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 35px;
+  margin-top: 30px;
+  font-weight: 700;
+  transition: all 0.3s;
+}
+
+.story_top button:hover {
+  opacity: 0.8;
+}
+
+.story_bot {
+  margin-top: 50px;
+}
+
+.story_bot .col-3 h2 {
+  padding: 20px 0;
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.story_bot a {
+  text-decoration: none;
+  color: #ff6600;
+  font-size: 20px;
+  font-weight: 700;
+  transition: all 0.3s;
+}
+
+.story_bot a:hover {
+  opacity: 0.5;
+}
+
+.story_bot p {
+  font-size: 18px;
+  color: #161c2d;
+}
+
+/* Skill */
+.skill {
+  background-color: #f7f7f7;
+  padding: 50px 0;
+}
+
+.skills_rate h6 {
+  font-size: 18px;
+}
+
+.skill_item {
+  padding: 0 70px;
+}
+
+.skills_rate .rate {
+  display: flex;
+  height: 7px;
+  overflow: hidden;
+  font-size: 0.75em;
+  background-color: #a5a2a1;
+  border-radius: 0.25em;
+  width: 100%;
+}
+
+.skills_rate .rate .none {
+  background-color: #ff6600;
+}
+
+.skill .skill_img {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.skill .skill_img img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+/* Team */
+.team_content {
+  margin-top: 50px;
+}
+
+.team_img {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.team_img img {
+  width: 90%;
+  border-radius: 5px;
+}
+
+.team_icon {
+  position: absolute;
+  bottom: 20px;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.team_icon span i {
+  background: rgb(157 157 157 / 50%);
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 16px;
+  transition: all 0.8s;
+}
+
+.team_icon span i:hover {
+  background: #fff;
+  color: #ff6600;
+}
+
+.team_items:hover .team_icon {
+  opacity: 1;
+}
+
+.team_items:hover .team_info a {
+  color: #ff6600;
+}
+
+.team_info {
+  margin-top: 20px;
+}
+
+.team_info a {
+  text-decoration: none;
+  color: #000;
+  transition: all 0.5s;
+}
+
+.team_info h4 {
+  font-weight: 700;
+}
+
+.team_info p {
+  font-size: 20px;
+  color: #161c2d;
+}
+
+/* Footer */
+
+.footer_content .col-4 a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.footer_content .col-4 p {
+  font-size: 17px;
+  margin-top: 20px;
+  color: #a5a2a1;
+}
+
+.footer_content .footer_icon {
+  margin-top: 10px;
+}
+
+.footer_content .footer_icon a i {
+  background-color: #fff;
+  font-size: 16px;
+  padding: 10px;
+  color: #ff6600;
+  border-radius: 5px;
+  margin-right: 10px;
+  transition: all 0.5s;
+}
+
+.footer_content .footer_icon i:hover {
+  background-color: #ff6600;
+  color: #fff;
+}
+
+.footer_content .col-2 ul {
+  padding-left: 0;
+}
+
+.footer_content .col-2 li {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.footer_content .col-2 a {
+  text-decoration: none;
+  color: #a5a2a1;
+  opacity: ;
+  transition: all 0.5s;
+}
+
+.footer_content .col-2 li:hover a {
+  color: #f96306;
+}
+
+.footer_content .col-4 input {
+  display: block;
+  flex: 1;
+  padding: 15px 50px 15px 20px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.footer_content .col-4 input:focus {
+  outline: none;
+  border-color: #ff6600;
+}
+
+.footer_content .col-4 button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 15px;
+  color: #fff;
+  font-weight: 600;
+  background-color: #ff6600;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+
+.footer_content .col-4 button:hover {
+  opacity: 0.8;
+}
+
+.footer_end {
+  border-top: 1px solid #cccccc3c;
+  padding: 20px 0;
+}
+
+.footer_end p {
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.footer_end a {
+  color: #ff6600;
+  text-decoration: none;
+}
+
+/* BACK TO TOP */
+.back_to_top {
+  position: fixed;
+  background-color: #ff6600;
+  color: #ffffff;
+  font-size: 16px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  right: 20px;
+  bottom: 50px;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.cd-top--is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media screen and (min-width: 576px) {
+  .modal-dialog {
+    text-align: center;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .header_items form {
+    display: none;
+  }
+
+  .story_top {
+    padding: 0 !important;
+  }
+
+  .story_top .col-6 {
+    width: 100%;
+  }
+
+  .story_top .story_heading {
+    font-size: 25px;
+    margin: 20px 0;
+  }
+
+  .story_bot .col-3 {
+    width: 100% !important;
+  }
+
+  .story_bot .col-3:first-child {
+    padding: 0 20px;
+  }
+
+  .story_bot .col-3:first-child h2 {
+    font-size: 25px;
+  }
+
+  .skill_item,
+  .skill_img {
+    width: 100%;
+  }
+
+  .skill_item {
+    padding: 0 10px;
+  }
+
+  .skill_item h3 {
+    font-size: 26px;
+  }
+
+  .skill_para {
+    font-size: 16px !important;
+    margin: 15px 0;
+  }
+
+  .skill_img {
+    margin-top: 30px;
+  }
+
+  .team_items {
+    width: 50%;
+  }
+
+  .team_items:last-child {
+    margin: 15px 110px;
+  }
+
+  footer .footer_heading {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  footer .footer_heading .footer_icon {
+    text-align: center;
+  }
+
+  footer .footer_link {
+    width: 50%;
+    padding-left: 12px !important;
+  }
+
+  footer .footer_subscribe {
+    width: 100%;
+    padding-left: 12px !important;
+  }
+}

@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+
+body {
+  overflow: visible !important;
+}
+
+.title {
+  font-family: "Pacifico", cursive;
+  color: #ff6600;
+  font-size: 20px;
+}
+
+.heading_title {
+  font-size: 38px;
+  color: #232121;
+  font-weight: 600;
+}
+
+.para {
+  letter-spacing: 2;
+  line-height: 1.5;
+  font-size: 18px;
+}
+
+/* Mode Dark Light */
+
+#switchButton .fa-sun {
+  display: none;
+}
+#switchButton .fa-moon {
+  display: block;
+}
+
+/* Dark Theme*/
+.dark#background {
+  background-color: #232220;
+}
+
+#switchButton {
+  color: #ffffff;
+}
+
+.dark #switchButton {
+  background-color: transparent;
+  border: 1px solid transparent;
+}
+.dark #switchButton .fa-sun {
+  display: block;
+  background-color: transparent;
+  color: white;
+}
+
+.dark #switchButton .fa-moon {
+  display: none;
+}
+/* .dark .card {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+} */
+
+.dark .heading_title {
+  color: #ffffff;
+}
+
+.dark .about_content .about_para p {
+  color: #c2d0da;
+}
+
+.dark .header_items input {
+  background-color: #232121;
+  color: #ffffff;
+}
+
+.dark .header_items span i {
+  color: #404040;
+}
+
+.dark .categories {
+  background-color: #282828;
+}
+
+.dark .rate a {
+  color: #ffffff;
+}
+
+.dark .portfolio_bg {
+  border: 1px solid #ffffff1a;
+}
+
+.dark .portfolio_bg .top .icon {
+  background-color: #282828;
+}
+
+.dark .portfolio_bg:hover .icon {
+  background-color: #ff6600;
+}
+
+.dark .portfolio_bg .top .content .title {
+  color: #ffe0e6;
+}
+
+.dark .portfolio_bg .top .content h3 {
+  color: #eeeeee;
+}
+
+.dark .portfolio_bg .content a:hover h3 {
+  color: #ff6600;
+}
+
+.dark .portfolio_bg .bot p {
+  color: #ffe0e6;
+}
+
+.dark .count {
+  color: #ffffff;
+}
+
+.dark .stats_bg p {
+  color: #ffe0e6;
+}
+
+.dark .blogs,
+.dark .skill {
+  background-color: #282828;
+}
+
+.dark .blogs_content .card_bot h2,
+.dark .card_footer_left p,
+.dark .card_footer .btn_card {
+  color: #ffffff;
+}
+
+.dark .card_footer .btn_card:hover {
+  color: #ff6600;
+}
+
+.dark .sub_heading_title,
+.dark .carousel_footer p,
+.dark .portfolio .portfolio_title .right p {
+  color: #ffe0e6;
+}
+
+.dark .carousel_footer h3 {
+  color: #ffffff;
+}
+
+.dark .footer_icon a i {
+  background-color: #232220;
+}
+
+.dark .col-4 input {
+  background-color: #232220;
+  border: none;
+  transition: all 0.3s;
+}
+
+.dark .col-4 input:focus {
+  outline: none;
+  border: 1px solid #ff6600;
+}
+
+.dark .content_book .content_book_top h3 {
+  color: #ffffff;
+}
+
+.dark .story_heading,
+.dark .story_bot h2 {
+  color: #ffffff;
+}
+
+.dark .col-6 p,
+.dark .col-3 p,
+.dark .skill_title .skill_para {
+  color: #c2d0da !important;
+}
+
+.dark .skill_title .title {
+  color: #ff6600;
+}
+
+.dark .team_info a,
+.dark .team_info p,
+.dark .plan .plan_menu .col-8 {
+  color: #ffffff;
+}
+
+.dark .plan .plan_menu .plan_top {
+  border-bottom: 1px dashed #fff;
+}
+
+.dark .stats_bg {
+  background-color: #232121;
+}
